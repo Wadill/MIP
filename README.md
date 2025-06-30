@@ -1,16 +1,10 @@
-Sure! Here's your content formatted cleanly as a `README.md` file:
-
-````markdown
 # MIP: Miners' Incentive Platform
 
-![MIP Logo](https://via.placeholder.com/150) <!-- Replace with actual logo URL if hosted -->
-*Empowering Bitcoin miners with hedging, pooling, and badges.*
-
-Welcome to **MIP**, a decentralized platform built for the Citrea WaveHack to revolutionize Bitcoin mining incentives. Harnessing Citrea’s zkEVM technology, MIP offers miners tools to hedge rewards, pool resources, and earn social badges—all with a sleek, responsive frontend powered by React and Tailwind CSS. Launched on Citrea Testnet, this project blends DeFi innovation with Bitcoin’s ecosystem, proving the power of zero-knowledge rollups.
+Welcome to **MIP**, a decentralized platform built to revolutionize Bitcoin mining incentives. Harnessing Citrea’s zkEVM technology, MIP offers miners tools to hedge rewards, pool resources, and earn social badges—all with a sleek, responsive frontend powered by React and Tailwind CSS. Launched on Citrea Testnet, this project blends DeFi innovation with Bitcoin’s ecosystem, proving the power of zero-knowledge rollups.
 
 ---
 
-## 🚀 What It Does
+## What It Does
 
 MIP transforms the mining game by:
 
@@ -22,7 +16,7 @@ This platform, built on Citrea’s zkEVM, delivers fast, cost-efficient transact
 
 ---
 
-## ❗ The Problem It Solves
+## The Problem It Solves
 
 Bitcoin miners face relentless challenges:  
 Price volatility threatens profits, solo mining can be isolating, and their hard work often goes unrecognized.
@@ -36,7 +30,7 @@ It turns mining into a rewarding adventure rather than a risky gamble.
 
 ---
 
-## 🧩 Challenges I Ran Into
+## Challenges I Ran Into
 
 - Deploying zk-rollups on Citrea Testnet—especially challenging at 08:39 AM WAT!
 - MetaMask connection hiccups that tested patience.
@@ -44,7 +38,7 @@ It turns mining into a rewarding adventure rather than a risky gamble.
 
 ---
 
-## 🛠 Technologies I Used
+## Technologies I Used
 
 - **React** – For building a dynamic frontend
 - **Tailwind CSS** – For clean, modern, and responsive UI
@@ -54,9 +48,7 @@ It turns mining into a rewarding adventure rather than a risky gamble.
 
 ---
 
-## 🏗 How We Built It
-
-Fueled by coffee and determination at **04:15 PM WAT, June 29, 2025**, MIP was solo-built from scratch:
+## How We Built It
 
 1. Wireframes crafted at dawn
 2. Frontend developed with React + Tailwind
@@ -67,7 +59,7 @@ The result? A sleek, decentralized platform that’s as functional as it is beau
 
 ---
 
-## 📚 What We Learned
+## What We Learned
 
 - The power of zk-rollups in reducing transaction costs
 - The beauty of Ethereum tooling in a Bitcoin-aligned environment
@@ -75,7 +67,7 @@ The result? A sleek, decentralized platform that’s as functional as it is beau
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -89,8 +81,8 @@ The result? A sleek, decentralized platform that’s as functional as it is beau
 ### Setup Steps
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/mip.git
+```bash
+   git clone https://github.com/wadill/mip.git
    cd mip
 ````
 
@@ -124,7 +116,7 @@ The result? A sleek, decentralized platform that’s as functional as it is beau
 
 ---
 
-## 🧪 Usage
+## Usage
 
 * **Connect Wallet**: Use MetaMask to link your Citrea Testnet account.
 * **Explore Features**: Create pools, stake cBTC, place hedges, and view badges.
@@ -132,7 +124,7 @@ The result? A sleek, decentralized platform that’s as functional as it is beau
 
 ---
 
-## 🌍 Relevance to Citrea
+## Relevance to Citrea
 
 MIP fully embraces Citrea’s zkEVM by:
 
@@ -144,7 +136,7 @@ This aligns tightly with Citrea’s mission to scale Bitcoin and inspire meaning
 
 ---
 
-## 🔮 What's Next for MIP
+## What's Next for MIP
 
 * **Chainlink Oracle Integration**: Real-time price data for better hedging
 * **Dynamic Badge System**: Real-time miner achievements tracked on-chain
@@ -153,42 +145,8 @@ This aligns tightly with Citrea’s mission to scale Bitcoin and inspire meaning
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Interested in making mining better?
 Fork the repo, create a feature branch, and submit a pull request.
 Collaboration is power! 💪
-
----
-
-## 📄 License
-
-**MIT License** — Free to use, modify, and distribute.
-
----
-
-## 🙏 Acknowledgments
-
-* Huge thanks to **Citrea** for providing the zkEVM infrastructure and WaveHack platform.
-* Shoutout to the dev community and all miners who keep Bitcoin alive.
-
----
-
-> *Built with grit at 04:15 PM WAT, Sunday, June 29, 2025.*
-
----
-
-## 📝 Notes
-
-* Replace the placeholder GitHub URL and logo once available.
-* Ensure contract address and ABI are configured for deployment.
-* This README is a living document—keep it updated as MIP evolves.
-
----
-
-**Happy mining with MIP! 🚀**
-
-```
-
-Let me know if you want a `README.md` file export or if you'd like help deploying it to GitHub.
-```
