@@ -1,18 +1,19 @@
 import React from 'react';
-import { WalletIcon } from '@heroicons/react/24/outline';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">MIP - Miners' Incentive Platform</h1>
-        <div className="flex items-center space-x-4">
-          <button className="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition">
-            <WalletIcon className="h-5 w-5 mr-2" />
-            Connect Wallet
-          </button>
+    <nav className="bg-white p-4 shadow-md flex justify-between items-center">
+      <div className="flex items-center">
+        <div className="w-10 h-10 bg-gradient-to-r from-pastel-blue to-pastel-pink rounded-md flex items-center justify-center text-white font-bold">
+          MIP
         </div>
+        <ul className="flex space-x-6 ml-6">
+          <li className="hover:text-pastel-pink cursor-pointer">Home</li>
+          <li className="hover:text-pastel-pink cursor-pointer">Dashboard</li>
+          <li className="hover:text-pastel-pink cursor-pointer">Market</li>
+        </ul>
       </div>
+      <input type="text" placeholder="Search" className="p-2 rounded-md border border-gray-300" />
     </nav>
   );
 };
