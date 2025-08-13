@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Portfolio: React.FC = () => {
-  const [prices, setPrices] = useState({ BTC: 0, ETH: 0 });
+interface PriceData {
+  BTC: number;
+  ETH: number;
+}
 
-  React.useEffect(() => {
+const Portfolio: React.FC = () => {
+  const [prices, setPrices] = useState<PriceData>({ BTC: 0, ETH: 0 });
+
+  useEffect(() => {
     // Mock Redstone API call for real-time prices
-    axios.get('https://api.redstone.finance/prices?symbol=BTC,ETH')
-      .then(response => setPrices(response.data.data))
-      .catch(error => console.error('Error fetching prices:', error));
+    axios
+      .get<PriceData>('https://api.redstone.finance/prices?symbol=BTC,ETH')
+      .then((response) => setPrices(response.data))
+      .catch((error: Error) => console.error('Error fetching prices:', error));
   }, []);
 
   return (

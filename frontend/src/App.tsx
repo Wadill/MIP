@@ -7,11 +7,13 @@ import Footer from './components/Footer';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-pastel-pink to-pastel-blue text-gray-800">
+      <div className="flex flex-col min-h-screen bg-gradient-to-br from-pastel-pink to-pastel-blue text-gray-800">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

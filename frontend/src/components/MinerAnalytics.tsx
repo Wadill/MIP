@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+interface AnalyticsData {
+  blocksMined: number;
+  reward: number;
+}
+
 const MinerAnalytics: React.FC = () => {
-  const [analytics, setAnalytics] = useState({ blocksMined: 0, reward: 0 });
+  const [analytics, setAnalytics] = useState<AnalyticsData>({ blocksMined: 0, reward: 0 });
 
   useEffect(() => {
     // Mock Blocksense data retrieval
-    axios.get('https://api.blocksense.mock/miner-data')
-      .then(response => setAnalytics(response.data))
-      .catch(error => console.error('Error fetching analytics:', error));
+    axios
+      .get<AnalyticsData>('https://api.blocksense.mock/miner-data')
+      .then((response) => setAnalytics(response.data))
+      .catch((error: Error) => console.error('Error fetching analytics:', error));
   }, []);
 
   return (
